@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-p{
+h2{
     padding: 10px 0;
 }
 
@@ -14,10 +14,19 @@ body{
     align-items: center;
     height: 100vh;
     width: 100%;
- 
-    background-color: rgba(0, 0, 0, 0.717);
-    color: white;
+    color: black;
     font-family: 'Open Sans', sans-serif;
+    background: #ede574; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #e1f5c4,
+      #ede574
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #e1f5c4,
+      #ede574
+    );
 }
 
 .container{
@@ -25,9 +34,23 @@ body{
     height: max-content;
     width: 400px;
     border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 40px rgb(220, 207, 25) ,2px 2px 60px rgb(255, 255, 255),2px 2px 80px rgb(255, 255, 255);
     transition: 0.5s ease;
+    background: #ede574; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #e1f5c4,
+      #ede574
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #e1f5c4,
+      #ede574
+    );
+
+      box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+
+    
+
 }
 .container:hover{
     transform: scale(1.1) ;
@@ -37,15 +60,15 @@ form input{
   width: 100%;
   font-size: 1.5rem;
   border: none;
-  border-bottom: .5px solid #fff ;
+  border-bottom: .5px solid #000 ;
   background-color: transparent;
-  color: white;
+  color: black;
   padding: 10px;
 
 }
 input:focus{
     outline:none !important;
-    color: white;
+    color: black;
     
 
 }

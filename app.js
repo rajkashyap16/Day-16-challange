@@ -13,6 +13,7 @@ form.addEventListener("submit", (e) => {
   if (input.value == "" || input.value <= 0) {
     para.innerHTML = "Please enter the correct value";
   } else {
-    para.innerHTML = `The Weight is ${result} in <span class="green">Pounds</span> `;
+    para.innerHTML = `
+    Your Weight in Pounds : <span class = "green">${result}</span>`;
   }
 });
